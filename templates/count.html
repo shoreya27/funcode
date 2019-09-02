@@ -1,0 +1,14 @@
+<body bgcolor='orange'>
+
+<h1><u>word count project</u></h1>
+<p>There are total <b>{{words}}</b> words in your text.</p>.
+<a href='{%url 'home' %}'>Lets go again </a>
+<h2>YOUR TEXT:</h2>
+<p><h4>{{Text}}</h4></p>
+<br>
+
+{%for word,count in list%}
+{{word}}={{count}}
+<br>
+{%endfor%}
+</body>
